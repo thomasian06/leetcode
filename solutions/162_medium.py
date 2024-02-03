@@ -46,9 +46,12 @@ def find_peak_element(numbers: list[int]) -> int:
     left_index = 0
     right_index = len(numbers) - 1
 
-    while True: # run binary search to find peaks
+    while True:  # run binary search to find peaks
         check_index = (left_index + right_index) // 2
-        if numbers[check_index] < numbers[check_index + 1] and numbers[check_index] < numbers[check_index - 1]:
+        if (
+            numbers[check_index] < numbers[check_index + 1]
+            and numbers[check_index] < numbers[check_index - 1]
+        ):
             right_index = check_index - 1
             continue
         if numbers[check_index] < numbers[check_index + 1]:
@@ -58,23 +61,3 @@ def find_peak_element(numbers: list[int]) -> int:
             right_index = check_index - 1
             continue
         return check_index
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

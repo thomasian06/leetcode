@@ -39,6 +39,7 @@ numbers is sorted in non-decreasing order.
 The tests are generated such that there is exactly one solution.
 """
 
+
 def two_sum(numbers: list[int], target: int) -> list[int]:
     """Compute 1-indices of two numbers in list that add up to target."""
     left = 0
@@ -53,34 +54,3 @@ def two_sum(numbers: list[int], target: int) -> list[int]:
         sum = numbers[left] + numbers[right]
 
     return [left + 1, right + 1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

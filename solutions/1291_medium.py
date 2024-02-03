@@ -26,9 +26,7 @@ Constraints:
 def sequential_digits(low: int, high: int) -> list[int]:
     """Get all numbers with sequential digits in the range [low, high]."""
 
-    def get_n_digit_sequential_numbers(
-        n: int, min: int, max: int
-    ) -> list[int]:
+    def get_n_digit_sequential_numbers(n: int, min: int, max: int) -> list[int]:
         """Get n digit sequential numbers."""
         ret: list[int] = []
         for i in range(9 - n + 1):
